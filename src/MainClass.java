@@ -8,13 +8,15 @@ public class MainClass
 	 */
 	public static void main(String[] args)
 	{
-		int[] prices = {150,24,79,50,88,345,3};
-		System.out.println(StoreCredit.findTwo(prices, 200));
-		prices = new int[] {5,75,25};
-		System.out.println(StoreCredit.findTwo(prices, 100));
-		prices = new int[] {2,1,9,4,4,56,90,3};
-		System.out.println(StoreCredit.findTwo(prices, 8));
-		System.out.println(StoreCredit.findTwo(prices, 2));
+		for(int i = 2 ; i < 101 ; i++)
+		{
+		    monty(i);
+		}
 	}
 
+	public static void monty(final int doors)
+	{
+	    System.out.println("Monty hall problem with " + doors + " doors:");
+	    System.out.println(MontyHall.montyHall(doors, 10000));
+	}
 }
