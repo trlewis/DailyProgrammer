@@ -1,5 +1,6 @@
 import EasyChallenges.*;
 import IntermediateChallenges.*;
+import DifficultChallenges.*;
 
 public class MainClass
 {
@@ -9,9 +10,10 @@ public class MainClass
 	 */
 	public static void main(String[] args)
 	{
-		System.out.println(ASCIIDirectory.printDirectory("/home/econobeing/stuff/testDir/", 1));
-	    
-	    //ASCIIDirectory.listDir("/home/econobeing/programming/", 10, 2);
+	    System.out.println("hi: " + T9Spelling.convertToT9("hi"));
+	    System.out.println("yes: " + T9Spelling.convertToT9("yes"));
+	    System.out.println("foo  bar: " + T9Spelling.convertToT9("foo  bar"));
+	    System.out.println("hello world: " + T9Spelling.convertToT9("hello world"));
 	}
 
 	public static void monty(final int doors)

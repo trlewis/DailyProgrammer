@@ -4,7 +4,7 @@ import java.io.File;
 
 /**
  * @author Travis Lewis
- * Date: 13 April 2012
+ * Date: 10 May 2012
  * Challenge #50
  * 
  * Given an absolute path, write a program that outputs an ASCII tree of 
@@ -15,11 +15,13 @@ import java.io.File;
  */
 public class ASCIIDirectory 
 {
-    public static String printDirectory(final String path, final int depth) {
+    public static String printDirectory(final String path, final int depth) 
+    {
         String result = "";
         File[] list = (new File(path)).listFiles();
         
-        for(int i = 0 ; i < list.length ; i++){
+        for(int i = 0 ; i < list.length ; i++)
+        {
             for(int j = 0 ; j < depth ; j++)
                 result += "    ";
             result += "+-";
