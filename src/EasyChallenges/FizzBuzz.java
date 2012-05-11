@@ -7,10 +7,10 @@ package EasyChallenges;
  * 
  * You are to write a function that displays the numbers from 1 to an input
  * parameter n, one per line, except that if the current number is divisible 
- * by 3 the function should write ÒFizzÓ instead of the number, if the current 
- * number is divisible by 5 the function should write ÒBuzzÓ instead of the 
+ * by 3 the function should write ï¿½Fizzï¿½ instead of the number, if the current 
+ * number is divisible by 5 the function should write ï¿½Buzzï¿½ instead of the 
  * number, and if the current number is divisible by both 3 and 5 the function 
- * should write ÒFizzBuzzÓ instead of the number.
+ * should write ï¿½FizzBuzzï¿½ instead of the number.
  * 
  * For instance, if n is 20, the program should write 
  * 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 
