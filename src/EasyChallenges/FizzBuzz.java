@@ -3,6 +3,7 @@ package EasyChallenges;
 /**
  * @author Travis Lewis
  * Date: 13 April 2012
+ * Challenge #39
  * 
  * You are to write a function that displays the numbers from 1 to an input
  * parameter n, one per line, except that if the current number is divisible 
