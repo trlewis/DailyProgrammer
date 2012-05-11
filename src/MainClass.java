@@ -1,4 +1,5 @@
 import EasyChallenges.*;
+import IntermediateChallenges.*;
 
 public class MainClass
 {
@@ -8,10 +9,9 @@ public class MainClass
 	 */
 	public static void main(String[] args)
 	{
-		for(int i = 2 ; i < 101 ; i++)
-		{
-		    monty(i);
-		}
+		System.out.println(ASCIIDirectory.printDirectory("/home/econobeing/stuff/testDir/", 1));
+	    
+	    //ASCIIDirectory.listDir("/home/econobeing/programming/", 10, 2);
 	}
 
 	public static void monty(final int doors)
