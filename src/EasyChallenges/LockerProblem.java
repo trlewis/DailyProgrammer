@@ -3,7 +3,6 @@ package EasyChallenges;
 /** 
 * @author Travis Lewis
 * Date: 5 April 2012
-* 
 * Challenge #36
 * 
 * 1000 Lockers Problem.
