@@ -10,26 +10,34 @@ public class MainClass
 	 */
 	public static void main(String[] args)
 	{
-	    int[] a = new int[] {1,5,7,8};
-	    int[] b = new int[] {2,3,4,7,9};
+	    String str = BaseConverter.convertToBaseX(12345678 , 23);
+	    System.out.println(str);
+	    System.out.println(BaseConverter.isPalindrome("abccba"));
+	    System.out.println(BaseConverter.isPalindrome("abcba"));
+	    System.out.println(BaseConverter.isPalindrome("abcdba"));
+	    System.out.println(BaseConverter.isPalindrome("abcefecgba"));
+	    System.out.println(BaseConverter.isPalindrome(str));
 	    
-	    int[] c = MergeSorted.combineLists(a, b);
-	    
-	    MergeSorted.printTest(new int[] {1,5,7,8}, new int[] {2,3,4,7,9});
-	    
-	    System.out.println("------------------------------");
-	    
-	    //expected: 1, 2, 3, 7, 15, 19, 20, 21, 22, 23, 24, 25, 25, 25
-	    MergeSorted.printTest(new int[] {1,3,7,19,20,25}, 
-	            new int[] {2,15,21,22,23,24,25,25});
-	    
-	    
-	    System.out.println("------------------------------");
-	    
-	    //expected: 1, 2, 4, 5, 8, 9, 12, 12, 13
-	    MergeSorted.printTest(new int[] {4,5,8,12}, new int[] {1,2,9,12,13});
+	    boolean palindrome = false;
+	    int num = 10858;
+	    //int base = 2;
+	    //while(!palindrome) {
+	    for(int base = 2 ; base <= 36 ; base++) {
+	        String conv = BaseConverter.convertToBaseX(num, base);
+	        System.out.print(num + " in base " + base + ": " + conv);
+	        palindrome = BaseConverter.isPalindrome(conv);
+	        conv = palindrome ? " palindrome" : "";
+	        System.out.println(conv);
+	       
+	    }
+	    convertBase(19959694, 35);
+	    String ls = "376609378180550";
+        convertBase(Long.parseLong(ls), 29);
 	}
 	
+	public static void convertBase(long number, int base) {
+	       System.out.println(number + " in base " + base + " is: " + BaseConverter.convertToBaseX(number, base));
+	}
 
 	public static void monty(final int doors)
 	{
