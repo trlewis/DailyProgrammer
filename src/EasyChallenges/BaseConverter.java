@@ -1,7 +1,5 @@
 package EasyChallenges;
 
-import java.util.Stack;
-
 /**
  * @author Travis Lewis
  * Date: 30 May 2012

@@ -1,6 +1,6 @@
 import EasyChallenges.*;
-import IntermediateChallenges.*;
-import DifficultChallenges.*;
+//import IntermediateChallenges.*;
+//import DifficultChallenges.*;
 
 public class MainClass
 {
